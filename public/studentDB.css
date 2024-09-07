@@ -1,0 +1,320 @@
+.navi {
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #00246b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.content {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 90px;
+
+}
+
+.content>select {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+
+
+.body {
+    padding: 30px;
+    height: 30%;
+    width: 90%;
+    max-width: 500px;
+    background-color: #3d66ac;
+    border-radius: 20px;
+    margin: 100px auto 30px;
+    /* Modified */
+}
+
+#sectionslec {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    background-color: rgb(238, 232, 232);
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-left: 17px;
+}
+
+.loginbut {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2.5px solid;
+}
+
+.loginbut:hover {
+    font-size: 22px;
+    color: white;
+    transition: 0.15s ease-in;
+    background-color: #3187b9;
+    border-color: rgb(0, 0, 0);
+}
+
+
+.home {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #adceed;
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+body {
+    background-color: #7a94c3;
+    margin: 0;
+    padding: 0;
+}
+
+.loginbut {
+    margin-right: 40px;
+}
+
+#Stusearch1 {
+    margin: 7px 0px 0px 5px;
+    height: 40px;
+    width: 275px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+#Stusearch1[placeholder] {
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+#searchbut1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 7px;
+    background-color: #cb8112;
+    color: #ffffff;
+    margin-top: 25px;
+    margin-left: 4px;
+    border: 2.5px solid;
+
+}
+
+#searchbut1:hover {
+    transition: 0.15s ease-in;
+    background-color: #3187b9;
+    border-color: black;
+    color: white;
+    font-size: 19px;
+}
+
+.selectop {
+    display: inline-flex;
+}
+
+#caution {
+    width: 300px;
+    height: 25px;
+    background-color: #3187b9;
+    padding: 10px;
+    margin: 15px 0px 0px 9px;
+    box-shadow: 0px 0px 6px black;
+    border-radius: 15px;
+}
+
+.navi {
+    margin: 0;
+    top: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.body {
+    padding: 30px;
+    height: 30%;
+    width: 90%;
+    max-width: 500px;
+    background-color: #3d66ac;
+    border-radius: 20px;
+    margin: 100px auto 30px;
+    /* Modified */
+}
+
+a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid;
+    background-color: #cb8112;
+}
+
+a:hover {
+    font-size: 22px;
+    color: white;
+    transition: 0.15s ease-in;
+    background-color: #3187b9;
+    border-color: white;
+}
+
+.home {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.logo {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    color: #adceed;
+    text-decoration: none;
+    margin: 10px;
+    padding: 6px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+body {
+    background-color: #7a94c3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 811px) {
+    #logo2{
+        display: none;
+    }
+    .navi {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .logo {
+        margin: 10px auto;
+        margin-left: 30px;
+    }
+
+    .home {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+
+    a {
+        font-size: 16px;
+        margin: 5px;
+        padding: 6px;
+    }
+
+    .body {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    /* Hamburger Icon Styles */
+    .hamburger-icon {
+        display: block;
+        position: absolute;
+        top: 23px;
+        right: 65px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger-icon span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #adceed;
+        margin-bottom: 5px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #00246b;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#yearslec {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-left: 17px;
+}
+#studentId{
+    position: relative;
+    top: 0px;
+    margin-left: 20px;
+    height: 46px;
+    border-radius: 15px;
+    z-index: 1;
+}
+#studentDetails{
+    background-color: #adceed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px;
+}
+img{
+    height: 70px;
+    width: 80%;
+    display: inline;
+}
+#images{
+    display: flex;
+    flex-direction: row;
+   
+}
+#updatePanel{
+    display: flex;
+    flex-direction: column;
+}
+

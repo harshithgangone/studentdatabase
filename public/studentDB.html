@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+    <link rel="stylesheet" href="studentDB.css">
+</head>
+
+<body>
+    <div class="navi">
+        <div id="images"><img src="logo_mallareddy.png" alt="notfound"> <img id="logo2" src="logo_121.png" ></div>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="loginbut">Home</a>
+            <a href="login.html" class="loginbut">Login</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="selectop">
+            <span id="yearslec">Select year</span>
+            <select name="year" id="year" aria-placeholder="year">
+                <option value="secondYears">II</option>
+                <option value="thirdYears">III</option>
+                <option value="fourthYears">IV</option>
+            </select><br>
+        </div><br>
+        <form id="searchForm">
+            <input type="search" placeholder="&#128269 Search Student ID" id="studentId">
+            <button type="submit" id="searchbut1">Search</button>
+        </form>
+        <div id="studentDetails"></div> <!-- Container to display student information -->
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+
+        document.getElementById('searchForm').addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            const year = document.getElementById('year').value;
+            const studentId = document.getElementById('studentId').value;
+
+            try {
+                const response = await fetch(`/api/students/${year}/${studentId.toUpperCase()}`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    document.getElementById('studentDetails').innerHTML = `
+                        <h2>Student Details</h2>
+                        <p>Name: ${data.name}</p>
+                        <p>Class: ${data.class}</p>
+                        <p>CGPA: ${data.gpa}</p>
+                    `;
+                } else {
+                    document.getElementById('studentDetails').innerHTML = '<p>Student details not found.</p>';
+                }
+            } catch (error) {
+                console.error('Error fetching student details:', error);
+                document.getElementById('studentDetails').innerHTML = '<p>Error fetching student details.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>
